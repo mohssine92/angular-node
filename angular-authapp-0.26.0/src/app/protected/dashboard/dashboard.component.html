@@ -1,0 +1,21 @@
+
+
+<h1>Dashboard</h1>
+<hr>
+
+<p>
+    Esta página sólo funciona si estás autenticado
+</p>
+
+
+
+<h4>User info</h4>
+<!-- al hacer refresh usuario pierde la data de memoria por destrocer la class service , asi nostros la hacenmos persistene en storage y luego la recuperamos antes de de la renderizacion del
+mismo  -->
+<pre>{{ usuario | json }}</pre>
+
+
+
+<button (click)="logout()">
+    Logout
+</button>
